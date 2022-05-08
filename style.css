@@ -27,6 +27,7 @@ body{
     background-color:var(--primary-color);
 }
 .wrapper{
+    height: 275px;
     width: 300px;
     background-color: var(--wrapper-color);
     padding: 25px 35px;
@@ -44,13 +45,14 @@ body{
     
 }
 form img{
+    display: none;
     max-width: 150px;
 }
 form .content{
-    display: none;
+    /* display: none; */
 }
 form .content i{
-    
+    cursor: pointer;
     font-size: 55px;
 }
 form .content p{
@@ -58,6 +60,9 @@ form .content p{
 }
 .wrapper .details{
     margin-top: 20px;
+    opacity: 0;
+    pointer-events: none;
+    
 }
 .wrapper .details textarea{
     width: 100%;
@@ -81,7 +86,7 @@ form .content p{
     outline: none;
     border: transparent;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 16px;
     color: #fff;
     cursor: pointer;
     
